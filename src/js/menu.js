@@ -1,5 +1,8 @@
 import reset from "./reset";
 import { createContentBox } from "./initialPageLoad";
+import ramen1 from "../images/bars-ramen-in-saigon-3227774_1280.jpg";
+import ramen2 from "../images/korean-instant-noodle-tteokbokki-korean-spicy-sauce-ancient-food.jpg";
+import ramen3 from "../images/side-view-shrimp-caesar-plate-topped-with-potato-shoestrings.jpg";
 
 export default function MenuPage (e) {
     if (e) {
@@ -15,9 +18,9 @@ export default function MenuPage (e) {
     contentBox.style.flexWrap = 'wrap';
     contentBox.style.justifyContent = 'center';
     contentBox.style.gap = '3rem';
-    addMenuItem("/images/bars-ramen-in-saigon-3227774_1280.jpg", "Ramen", contentBox);
-    addMenuItem("/images/korean-instant-noodle-tteokbokki-korean-spicy-sauce-ancient-food.jpg", "Tteokbokki", contentBox);
-    addMenuItem("/images/side-view-shrimp-caesar-plate-topped-with-potato-shoestrings.jpg", "Caesar plate", contentBox);
+    addMenuItem(ramen1, "Ramen", contentBox);
+    addMenuItem(ramen2, "Tteokbokki", contentBox);
+    addMenuItem(ramen3, "Caesar plate", contentBox);
     
     contentContainer.appendChild(contentBox);
 }
