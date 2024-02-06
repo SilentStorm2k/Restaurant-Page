@@ -15,16 +15,16 @@ export function HomePage (e = null) {
     const heading = createHeading(contentBox);
     const content = createContent(contentBox);
 
-    setTimeout(() => {
-        contentBox.style.opacity = '1';
-    });
     contentContainer.appendChild(contentBox);
 }
 
-function createContentBox (contentContainer) {
+export function createContentBox (contentContainer) {
     const contentBox = document.createElement('div');
     contentBox.classList.add("contentBox");
     contentContainer.appendChild(contentBox);
+    setTimeout(() => {
+        contentBox.style.opacity = '1';
+    });
     return contentBox;
 }
 
