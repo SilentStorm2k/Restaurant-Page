@@ -1,12 +1,13 @@
-import { addContent } from "./initialPageLoad";
+import { HomePage } from "./initialPageLoad";
 import 'normalize.css';
 import  '../css/styles.css';
 
-console.log("Hello");
-addContent();
+HomePage();
 
-function reset () {
-    const contentContainer = document.getElementById("content");
-    while (contentContainer.firstChild)
-        contentContainer.removeChild(contentContainer.firstChild);
-}
+const homeButton = document.getElementById("home");
+const menuButton = document.getElementById("menu");
+const aboutButton = document.getElementById("about");
+
+homeButton.addEventListener('click', HomePage);
+menuButton.addEventListener('click', MenuPage);
+aboutButton.addEventListener('click', AboutPage);
