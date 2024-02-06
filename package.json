@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack serve --open --config webpack.dev.js"
+    "start": "webpack serve --open --config webpack.dev.js",
+    "add": "git add dist && git commit -m \"Production code dist subtree commit\"",
+    "push": "git subtree push --prefix dist origin gh-pages",
+    "deploy": "npm run build && npm run add && npm run push"
   },
   "repository": {
     "type": "git",
