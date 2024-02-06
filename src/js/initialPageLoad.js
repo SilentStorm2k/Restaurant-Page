@@ -1,7 +1,11 @@
 import logo from '../images/logo.jpeg';
 import reset from './reset';
 
-export function HomePage () {
+export function HomePage (e = null) {
+    if (e) {
+        if (e.target.id == 'home' && document.getElementById('content').classList.contains('home'))
+            return;
+    }
     reset();
     const contentContainer = document.getElementById("content");
     contentContainer.classList.add('home');
@@ -11,11 +15,15 @@ export function HomePage () {
     const heading = createHeading(contentBox);
     const content = createContent(contentBox);
 
+    setTimeout(() => {
+        contentBox.style.opacity = '1';
+    });
     contentContainer.appendChild(contentBox);
 }
 
 function createContentBox (contentContainer) {
     const contentBox = document.createElement('div');
+    contentBox.classList.add("contentBox");
     contentContainer.appendChild(contentBox);
     return contentBox;
 }
