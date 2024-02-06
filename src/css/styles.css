@@ -11,10 +11,6 @@ body {
     margin: 0;
 }
 
-/* * {
-    border: 1px solid red;
-} */
-
 body {
     display: flex;
     flex-direction: column;
@@ -81,18 +77,27 @@ nav>button:focus-visible {
 }
 
 .contentBox {
+    max-width: 700px;
     flex: 1;
     display: flex;
     align-items: center;
     flex-direction: column;
     background: var(--color-3);
-    max-width: 700px;
     margin: 24px;
     padding: 24px;
     border: 5px solid wheat;
     border-radius: 20px;
     opacity: 0;
     transition: opacity 0.7s ease-in;
+}
+
+.contentBox a {
+    transition: all .14s ease-out;
+}
+
+.contentBox a:hover {
+    box-shadow: 4px 4px 0 wheat;
+    transform: translate(-4px, -4px);
 }
 
 .home {
