@@ -1,7 +1,11 @@
 import reset from "./reset";
 import { createContentBox } from "./initialPageLoad";
 
-export function MenuPage () {
+export default function MenuPage (e) {
+    if (e) {
+        if (e.target.id == 'menu' && document.getElementById('content').classList.contains('menu'))
+            return;
+    }
     reset();
     const contentContainer = document.getElementById('content');
     contentContainer.classList.add("menu");
