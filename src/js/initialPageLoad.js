@@ -1,5 +1,6 @@
 import logo from '../images/logo.jpeg';
 import reset from './reset';
+import ownerImg from '../images/Teuchi_Infobox.jpg';
 
 export function HomePage (e = null) {
     if (e) {
@@ -14,6 +15,7 @@ export function HomePage (e = null) {
     const contentBox = createContentBox(contentContainer);
     const heading = createHeading(contentBox);
     const content = createContent(contentBox);
+    const owner = createOwner(contentBox);
 
     contentContainer.appendChild(contentBox);
 }
@@ -47,4 +49,16 @@ function createBGImage (container) {
     image.src = logo;
     container.appendChild(image);
     return image;
+}
+
+function createOwner (container) {
+    const owner = document.createElement('a');
+    owner.href = "https://www.youtube.com/watch?v=r3z73eCcFRQ";
+    owner.style.border = "2px solid wheat";
+    owner.style.borderRadius = '20px';
+    owner.style.alignSelf = 'center';
+    owner.style.width = '200px';
+    owner.style.height = '200px';
+    owner.style.background = 'center/cover no-repeat url(' + ownerImg + ')';
+    container.appendChild(owner);
 }
