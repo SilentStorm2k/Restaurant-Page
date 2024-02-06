@@ -2,7 +2,8 @@ import { HomePage } from "./initialPageLoad";
 import 'normalize.css';
 import '../css/styles.css';
 import addFavicon from "./favicon";
-import { MenuPage } from "./menu";
+import MenuPage from "./menu";
+import AboutPage from "./about";
 
 const homeButton = document.getElementById("home");
 const menuButton = document.getElementById("menu");
