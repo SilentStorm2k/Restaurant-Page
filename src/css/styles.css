@@ -1,9 +1,60 @@
+:root {
+    --color-1: rgb(124, 10, 2);
+    --color-2: rgb(178, 34, 34);
+    --color-3: rgb(226, 88, 34);
+    --color-4: rgb(241, 188, 49);
+}
+
 html,
 body {
     height: 100%;
     margin: 0;
 }
 
-* {
+/* * {
     border: 1px solid red;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 4rem;
+}
+
+#content {
+    flex: 1;
+    background-color: var(--color-3);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--color-4);
+}
+
+#github {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: center / cover no-repeat url(../images/github-logo-light.png);
+    transition: transform .5s;
+}
+
+#github:hover {
+    transform: scaleX(-1);
+    background-image: url(../images/github-logo-dark.png);
 }
