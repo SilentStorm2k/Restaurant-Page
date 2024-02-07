@@ -108,6 +108,8 @@ This project was made on my path to learning and mastering javascript through Th
 * [![html][html]][html-url]
 * [![css][css]][css-url]
 * [![js][js]][js-url]
+* [![webpack][webpack]][webpack-url]
+* [![nodejs][nodejs]][nodejs-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -226,3 +228,7 @@ Project Link: [https://github.com/SilentStorm2k/Restaurant-Page](https://github.
 [css-url]: https://www.w3.org/Style/CSS/Overview.en.html
 [js]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [js-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[nodejs]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+[nodejs-url]: https://nodejs.org/en
+[webpack]: https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black
+[webpack-url]: https://webpack.js.org/
